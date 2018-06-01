@@ -28,6 +28,7 @@ class CashRegister
   end
 
   def items
+    self.add_item.map { |e|  }
   end
 
 
