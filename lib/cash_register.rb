@@ -19,7 +19,8 @@ class CashRegister
   end
 
   def apply_discount
-    self.add_item *discount
+    self.add_item(price)
+    price*discount
     #self.total-(self.total.to_f*discount/100.to_f).to_i
 
 
