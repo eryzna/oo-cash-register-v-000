@@ -1,5 +1,7 @@
 class CashRegister
+  @@items=[]
   attr_accessor :total
+
   def initialize (discount=0)
     @total=0
     @discount=discount
@@ -16,6 +18,7 @@ class CashRegister
     else
       self.total += price
     end
+    self.items <<title
   end
 
   def apply_discount
@@ -28,6 +31,7 @@ class CashRegister
   end
 
   def items
+    self.items
   end
 
 
