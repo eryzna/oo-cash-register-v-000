@@ -19,7 +19,6 @@ class CashRegister
     else
       self.total += price
     end
-    self.items<<title
   end
 
   def apply_discount
