@@ -14,7 +14,7 @@ class CashRegister
 
 
   def add_item (title,price,quantity=0)
-    items <<title
+    self.items <<title
     if quantity > 0
       self.total += price*quantity
     else
