@@ -13,11 +13,7 @@ class CashRegister
 
 
   def add_item (title,price,quantity=1)
-    if quantity > 0
-      self.total += price*quantity
-    else
-      self.total += price
-    end
+    self.total += price*quantity
   end
 
   def apply_discount
