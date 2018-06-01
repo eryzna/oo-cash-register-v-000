@@ -1,11 +1,14 @@
 class CashRegister
 
-  attr_accessor :total, :items,:discount
+  attr_accessor :total, :items
 
   def initialize (discount=0)
     @total=0
     @discount=discount
     @items=[]
+    def discount
+      @discount
+    end
   end
 
 
@@ -13,7 +16,6 @@ class CashRegister
     self.total += price*quantity
     quantity.times do
       items << title
-    end
   end
 
   def apply_discount
@@ -25,7 +27,6 @@ class CashRegister
     end
   end
 
-  
 
 
 end
