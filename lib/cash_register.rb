@@ -14,12 +14,13 @@ class CashRegister
 
 
   def add_item (title,price,quantity=1)
-    self.last_transaction=amount*quantity
+    #self.last_transaction=amount*quantity
+
     self.total += price*quantity
     quantity.times do
       items << title
     end
-    
+
   end
 
   def apply_discount
